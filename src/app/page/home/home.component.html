@@ -1,0 +1,46 @@
+<!-- <p>home works!</p> -->
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5 ">Clothes <br/> in the modern society</h1>
+        <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="location">
+        <a href="https://www.google.com.kh/maps/@11.5539968,104.9034752,12z?entry=ttu" target="_blank">Location <i class="bi bi-geo-alt-fill"></i></a>
+    </div>
+</div>
+<div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4 text-animation">How to get clothes</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>select clothes</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>fill the details</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>your order deliver in minute</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4 mb-4">
+    <h1 class="text-center mt-3" style="font-size: 30px;">Customers <span style="color: brown;font-weight: bold;">Favourites clothes</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-2" *ngFor="let CD of clothesData; index as i">
+            <div class="foodBox" *ngIf="i<=3">
+                <img src="{{CD.clothesImage}}">
+                <h1>{{CD.clothesName}}</h1>
+                <p>{{CD.clothesPrice | currency:'INR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmore">view more <i class="bi bi-arrow-right"></i></a>
+</div>

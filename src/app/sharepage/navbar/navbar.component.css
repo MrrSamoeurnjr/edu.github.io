@@ -1,0 +1,18 @@
+.active-link
+{
+    font-weight: bold;
+}
+.edit-back 
+{
+    background-color:red;
+    padding: 10px ;
+    border-radius: 5px;
+}
+.edit-col a
+{
+    color: aliceblue;
+}
+.edit-col a:hover
+{
+    color: brown;
+}

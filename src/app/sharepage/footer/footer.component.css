@@ -1,0 +1,65 @@
+.footer
+{
+    overflow: hidden;
+    background-color: #000;
+    top: 100%;
+    padding: 20px 10px;
+    position: sticky;
+    margin-top: 30px;
+    animation: changeBackgroundColor 4s infinite alternate;
+}
+@keyframes changeBackgroundColor {
+    0% {
+      background-color: #000; /* Original background color */
+    }
+    100% {
+      background-color: #e61111; /* New background color */
+    }
+  }
+h1
+{
+    color: #fff;
+    font-size: 20px;
+}
+p{
+    color: #fff;
+}
+a 
+{  
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 3px;
+    font-size: 17px;
+}
+a:hover
+{
+    color: blue;
+}
+i 
+{
+    padding: 0px 10px;
+}
+
+
+
+.animated-text {
+    display: inline-block;
+    opacity: 0;
+    animation: moveText 4s infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(-20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+  }
+  

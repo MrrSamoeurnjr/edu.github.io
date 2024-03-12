@@ -1,0 +1,71 @@
+@keyframes bgMovement {
+    0% {
+      background-position: center top;
+    }
+    50% {
+      background-position: center 50px; /* Adjust the value to control the movement distance */
+    }
+    100% {
+      background-position: center top;
+    }
+  }
+.container 
+{
+    background-image: url(https://media.istockphoto.com/id/1253373762/photo/fine-texture-of-heather-gray-fabric.jpg?s=612x612&w=0&k=20&c=e7aJzxz0Inexb5t_J516QGUKrV9fOHgqdKG1rfnv1sU=);
+    animation: bgMovement 25s infinite alternate; /* Adjust the duration and other properties as needed */
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.clothesbox
+{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #fff;
+}
+.clothesbox img
+{
+    /* text-align: center; */
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+}
+.clothesbox h1
+{
+    /* text-align: center; */
+    font-size: 17px;
+    font-weight: bold;
+}
+.clothesbox p
+{
+    /* text-align: center; */
+    font-size: 15px;
+}
+.clothesbox a 
+{
+    text-decoration: none;
+    background-color: rgb(242, 155, 155);
+    padding: 5px 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+}
+.clothesbox a:hover
+{
+    color: brown;
+}
+.edit-back a
+{
+    text-decoration: none;
+    background-color: rgb(245, 241, 235);
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    color: brown;
+}
+.edit-back a:hover
+{
+    color: #fff;
+}

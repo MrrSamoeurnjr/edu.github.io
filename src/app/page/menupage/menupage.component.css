@@ -1,0 +1,38 @@
+/* Define a keyframe animation */
+@keyframes moveImage {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Apply the animation to the image */
+  img.menu-image {
+    animation: moveImage 2s infinite; /* Use the moveImage animation infinitely */
+  }
+.containertwo 
+  {
+    text-align: center;
+    /* border: 2px solid rgb(246, 128, 78); */
+    border-radius: 15px;
+    animation: changeBorderColor 3s infinite; /* Apply the animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+  }
+  @keyframes changeBorderColor {
+    0% { border-color: rgb(242, 225, 202); }
+    50% { border-color: rgb(255, 0, 0); } /* Change to red at 50% of animation */
+    100% { border-color: rgb(242, 225, 202); } /* Change back to original color */
+  }
+.containertwo h1
+{
+    font-weight: bold;
+    color: burlywood;
+    font-size: 20px;
+} 
+.containertwo p
+{
+    font-size: 15px;
+} 
+.containertwo .price 
+{
+    color: brown;
+}

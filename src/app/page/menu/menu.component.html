@@ -1,0 +1,16 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="edit-back mb-5">
+            <a routerLink=""><i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="col-lg-4" *ngFor="let CT of clothesData">
+            <div class="clothesbox">
+                <img src="{{CT.clothesImage}}">
+                <h1>{{CT.clothesName}}</h1>
+                <p>{{CT.clothesDetails}}</p>
+                <p>{{CT.clothesPrice | currency:'INR'}}</p>
+                <a  [routerLink]="['/menu',CT.id]">Buy Now <i class="bi bi-arrow-right-circle"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
